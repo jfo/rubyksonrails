@@ -1,0 +1,2 @@
+module FlatcubeHelper
+end
