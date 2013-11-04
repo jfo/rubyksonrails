@@ -4,9 +4,12 @@
 
 
 div {
-  border: 1px solid black;
-  border-collapse: collapse;
-  }
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+
+    
 
 #s {
 
@@ -74,23 +77,22 @@ div {
 
 
 #face0 {
-  position:fixed; 
+  position:absolute; 
   margin:70px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
+  z-index: 10;
 }
 
 #face1 {
   position:fixed; 
   margin-left:70px;
-  //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
+//border-radius:7px;
   width:70px;
   height:70px;
 }
@@ -99,9 +101,8 @@ div {
   position:fixed; 
   margin-left:140px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -111,9 +112,8 @@ div {
   margin-left:140px;
   margin-top:70px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -123,9 +123,8 @@ div {
   margin-left:140px;
   margin-top:140px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -135,9 +134,8 @@ div {
   margin-left:70px;
   margin-top:140px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -146,9 +144,8 @@ div {
   position:fixed; 
   margin-top:140px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -157,9 +154,8 @@ div {
   position:fixed; 
   margin-top:70px;
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
@@ -167,9 +163,8 @@ div {
 #face8 {
   position:fixed; 
   //border-radius:7px;
-  border-color:black;
-  border-style:solid;
-  border-width: 0 0 0 0;
+  border: 1px solid ;
+  box-sizing:border-box;
   width:70px;
   height:70px;
 }
