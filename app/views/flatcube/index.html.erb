@@ -8,8 +8,8 @@
 <body>
 
 <% x = Cube.new %>
-<% x.scramble %>
-<% cube_state = html_colorize(x.cube) %>
+<%= x.scramble %>
+<% cube_state = html_colorize(@derp.cube) %>
 <% x.cube %>
 
 <div id="container">
