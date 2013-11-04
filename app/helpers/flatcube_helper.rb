@@ -3,7 +3,7 @@ module FlatcubeHelper
 
    cube_array = x.dup
 
-   switchhash = { 0 => 'gray',
+   switchhash = { 0 => 'white',
                   1 => 'red',
                   2 => 'blue',
                   3 => 'orange',
