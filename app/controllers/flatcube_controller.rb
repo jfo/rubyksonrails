@@ -1,5 +1,5 @@
 class FlatcubeController < ApplicationController
   def index
-    @derp = Cube.new
+    @derp = Cube.new.scramble
   end
 end
