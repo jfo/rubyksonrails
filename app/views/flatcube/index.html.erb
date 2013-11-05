@@ -7,10 +7,13 @@
 
 <body>
 
-<% x = Cube.new %>
-<% x.scramble %>
-<% cube_state = html_colorize(@derp.cube) %>
-<% x.cube %>
+<% cube_state = html_colorize(@cube.cube) %>
+<% params[:state] %> 
+
+
+<a href='./?state=<%= Cube.new.scramble.cube.join %>'>
+Scramble!
+</a>
 
 <div id="container">
 

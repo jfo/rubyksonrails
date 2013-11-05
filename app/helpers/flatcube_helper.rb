@@ -19,4 +19,5 @@ module FlatcubeHelper
 
     cube_array
   end
+
 end
