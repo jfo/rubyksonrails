@@ -1,4 +1,6 @@
 class FlatcubeController < ApplicationController
+
+
   def index
 
     if params[:state] == nil

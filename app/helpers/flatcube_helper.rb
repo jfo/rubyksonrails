@@ -1,7 +1,9 @@
 module FlatcubeHelper
-  def html_colorize(x)
 
-   cube_array = x.dup
+
+  def html_colorize(cube_array)
+
+   words_array = []
 
    switchhash = { 0 => 'white',
                   1 => 'red',
@@ -11,13 +13,17 @@ module FlatcubeHelper
                   5 => 'yellow'
    }
     
+
+    x = 0
     cube_array.each do |array|
-      array.collect! do |number_code|
-        number_code = switchhash[number_code]
+      words_array << []
+      array.each do |number_code|
+        words_array[x] << switchhash[number_code]
       end
+      x += 1
     end
 
-    cube_array
+    words_array 
   end
 
 end
