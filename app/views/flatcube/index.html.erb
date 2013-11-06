@@ -8,11 +8,11 @@
 <body>
 
 <% cube_state = html_colorize(@cube.cube) %>
-<%= cube_copy.class %>
 
+<div id="text">
 <ul>
   <li>
-    Cube = <%= params[:state] %> 
+    History = <%= params[:hist] %> 
   </li>
 
   <li>
@@ -24,28 +24,35 @@
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.u.cube.join %>'>Top!</a>
+    <a href='./?state=<%= cube_copy.u.cube.join %>&hist=<%= params[:hist].to_s + 'u' %>'>Top!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.d.cube.join %>'>Bottom!</a>
+    <a href='./?state=<%= cube_copy.d.cube.join %>&hist=<%= params[:hist].to_s + 'd' %>'>Bottom!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.r.cube.join %>'>Right!</a>
+    <a href='./?state=<%= cube_copy.r.cube.join %>&hist=<%= params[:hist].to_s + 'r' %>'>Right!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.l.cube.join %>'>Left!</a>
+    <a href='./?state=<%= cube_copy.l.cube.join %>&hist=<%= params[:hist].to_s + 'l' %>'>Left!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.f.cube.join %>'>Front!</a>
+    <a href='./?state=<%= cube_copy.f.cube.join %>&hist=<%= params[:hist].to_s + 'f' %>'>Front!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= cube_copy.b.cube.join %>'>Back!</a>
+    <a href='./?state=<%= cube_copy.b.cube.join %>&hist=<%= params[:hist].to_s + 'b' %>'>Back!</a>
   </li>
+
+  <li>
+    <% solved = cube_copy.simple_solve %>
+    <a href='./?state=<%= solved.cube.join %>&hist=<%=  params[:hist].to_s + solved.hist.join %>'>SOLVE</a>
+  </li>
+
+</div>
 
 
 

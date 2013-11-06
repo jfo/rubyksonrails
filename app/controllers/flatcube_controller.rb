@@ -1,8 +1,5 @@
 class FlatcubeController < ApplicationController
 
-
-
-
   def index
 
     if params[:state] == nil
@@ -32,6 +29,5 @@ class FlatcubeController < ApplicationController
 
     array 
   end
-
 
 end
