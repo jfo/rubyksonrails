@@ -8,6 +8,7 @@
 <body>
 
 <% cube_state = html_colorize(@cube.cube) %>
+<%= cube_copy.class %>
 
 <ul>
   <li>
@@ -23,23 +24,27 @@
   </li>
 
   <li>
-    <a href='./?state=<%= @fresh.d.cube.join %>'>Down!</a>
+    <a href='./?state=<%= cube_copy.u.cube.join %>'>Top!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= @cube.r.cube.join %>'>Right!</a>
+    <a href='./?state=<%= cube_copy.d.cube.join %>'>Bottom!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= @cube.l.cube.join %>'>Left!</a>
+    <a href='./?state=<%= cube_copy.r.cube.join %>'>Right!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= @cube.f.cube.join %>'>Front!</a>
+    <a href='./?state=<%= cube_copy.l.cube.join %>'>Left!</a>
   </li>
 
   <li>
-    <a href='./?state=<%= @cube.b.cube.join %>'>Back!</a>
+    <a href='./?state=<%= cube_copy.f.cube.join %>'>Front!</a>
+  </li>
+
+  <li>
+    <a href='./?state=<%= cube_copy.b.cube.join %>'>Back!</a>
   </li>
 
 
