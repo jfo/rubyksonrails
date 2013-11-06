@@ -13,25 +13,25 @@ class FlatcubeController < ApplicationController
     end
 
   end
-#
-#  def state_to_array(num_string)
-#    
-#    return Cube.new.cube if num_string.length != 54
-#
-#    array = [ [],[],[],[],[],[] ]
-#    x = 0
-#    y = 0
-#
-#    6.times do
-#      9.times do
-#        array[x] << num_string.slice(y).to_i
-#        y += 1
-#      end
-#      x += 1
-#    end
-#
-#    array 
-#  end
-#
+
+  def state_to_array(num_string)
+    
+    return Cube.new.cube if num_string.length != 54
+
+    array = [ [],[],[],[],[],[] ]
+    x = 0
+    y = 0
+
+    6.times do
+      9.times do
+        array[x] << num_string.slice(y).to_i
+        y += 1
+      end
+      x += 1
+    end
+
+    array 
+  end
+
 
 end
