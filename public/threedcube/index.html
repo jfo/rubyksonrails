@@ -6,18 +6,20 @@
 </head>
 
 <script type="text/javascript">
+
+
 function show_coords(event)
 {
 var x=event.clientX;
 var y=event.clientY;
-document.getElementById("derp").style.webkitTransform = "rotateX("+x+"deg) rotateY("+y+"deg)";
+document.getElementById("derp").style.webkitTransform = "rotateX("+-y+"deg) rotateY("+x+"deg)";
 }
 
 
 </script>
 
 
-<div id="tridiv"  onmousedown="show_coords(event)" >
+<div id="tridiv"  onmousemove="show_coords(event)" >
   <div class="scene" id="derp">
     <div class="shape cuboid-1 cub-1">
       <div class="face ft"></div>
