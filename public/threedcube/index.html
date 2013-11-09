@@ -7,12 +7,15 @@
 
 <script type="text/javascript">
 
+<!--  <div class="scene" style="-webkit-transform:rotateX(-7deg) rotateY(-688deg); -moz-transform:rotateX(-7deg) rotateY(-688deg); -ms-transform:rotateX(-7deg) rotateY(-688deg); transform:rotateX(-7deg) rotateY(-688deg); "> -->
+
 
 function show_coords(event)
 {
-var x=event.clientX;
-var y=event.clientY;
-document.getElementById("derp").style.webkitTransform = "rotateX("+-y+"deg) rotateY("+x+"deg)";
+  var x=event.clientX;
+  var y=event.clientY;
+  document.getElementById("derp").style.webkitTransform = "rotateX("+-y+"deg) rotateY("+x+"deg)";
+  document.getElementById("derp").style.MozTransform = "rotateX("+-y+"deg) rotateY("+x+"deg)";
 }
 
 
