@@ -1,0 +1,10 @@
+backend problems:
+all i want to do is hook up ajax calls to the backend logic without reaching through the asshole to get to the brain. 
+erb only runs the rubyks code on page load... i want to run code snippets dynamically hooking the returns up through ajax calls.
+then i can apply that technique to 
+ugggggggh
+
+design problems:
+javascript tracking needs to only occur when button is depressed, instead of continuously.
+why does the server freeze after x number of js calls?
+zoom in and out using simple buttons.
